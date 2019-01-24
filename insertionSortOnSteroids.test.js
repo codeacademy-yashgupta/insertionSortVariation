@@ -21,3 +21,12 @@ describe('validating input', () => {
     expect(insertionSortOnSteroids.validatingInput([])).toEqual('Invalid input!');
   });
 });
+
+describe('sortTheArray', () => {
+  it('should return the sorted circular array when every element is either greater or smaller than the existing elements', () => {
+    expect(insertionSortOnSteroids.sortTheArray([4, 3, 2, 1])).toEqual([4, 1, 2, 3]);
+  });
+  it('should return the array of same length as of input', () => {
+    expect(insertionSortOnSteroids.sortTheArray([5, 3, 2, 1]).length).toEqual(4);
+  })
+});
