@@ -28,5 +28,5 @@ describe('sortTheArray', () => {
   });
   it('should return the array of same length as of input', () => {
     expect(insertionSortOnSteroids.sortTheArray([5, 3, 2, 1]).length).toEqual(4);
-  })
+  });
 });
